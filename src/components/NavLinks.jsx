@@ -1,11 +1,21 @@
 import styles from "./NavLinks.module.css";
+import { NavLink } from "react-router-dom";
 
 const navLinks = () => {
   return (
     <ul className={styles.navLinks}>
-      <li className={styles.links}>Inicio</li>
-      <li className={styles.links}>Productos</li>
-      <li className={styles.links}>Carrito</li>
+      <NavLink to="/" className={styles.links}>
+        Inicio
+      </NavLink>
+      <NavLink to="/products" className={styles.links}>
+        Productos
+      </NavLink>
+      <NavLink to="/categories" className={styles.links}>
+        Categorias
+      </NavLink>
+      <NavLink to="/cart" className={styles.links}>
+        Carrito
+      </NavLink>
     </ul>
   );
 };

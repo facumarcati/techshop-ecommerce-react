@@ -3,6 +3,8 @@
   gap: 12px;
   list-style: none;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -15,6 +17,7 @@
   color: #333;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .links:hover {

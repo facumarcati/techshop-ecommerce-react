@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mouse Logitech G203",
+    "precio": 32999,
+    "imagen": "https://zgames.ae/media/catalog/product/cache/ed0e0b9233706b5b42d1db286ecb0c36/uploads/uploads/black_3_203.webp",
+    "descripcion": "Mouse gamer con sensor óptico de alta precisión y luces RGB personalizables.",
+    "color": "Negro",
+    "categoria": "Mouses"
+  },
+  {
+    "id": 2,
+    "nombre": "Teclado VSG Alnitak",
+    "precio": 119999,
+    "imagen": "https://gorilagames.com/img/Public/1019/53769-producto-teclado-vsg-alnitak-black-negro-gorila-games-2.jpg",
+    "descripcion": "Teclado mecánico con switches rojos y retroiluminación RGB completa.",
+    "color": "Negro",
+    "categoria": "Teclados"
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor Samsung Odyssey G3",
+    "precio": 389999,
+    "imagen": "https://aremsaprod.vtexassets.com/arquivos/ids/684674-1200-auto?v=638640655765900000&width=1200&height=auto&aspect=true",
+    "descripcion": "Monitor gamer de 27 pulgadas, 144Hz y diseño curvo para una experiencia inmersiva.",
+    "color": "Negro",
+    "categoria": "Monitores"
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor Samsung 27",
+    "precio": 399999,
+    "imagen": "https://tiendadiggit.com.ar/web/image/product.template/3693/image_1024?unique=6a23f39",
+    "descripcion": "Monitor Full HD de 27 pulgadas ideal para trabajo y entretenimiento diario.",
+    "color": "Negro",
+    "categoria": "Monitores"
+  },
+  {
+    "id": 5,
+    "nombre": "iPhone 15 256GB",
+    "precio": 799999,
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_974009-MLA93747857175_092025-O.webp",
+    "descripcion": "Smartphone de alto rendimiento con cámara avanzada y chip A16 Bionic.",
+    "color": "Azul medianoche",
+    "categoria": "Telefonos"
+  },
+  {
+    "id": 6,
+    "nombre": "AirPods 3ra Gen",
+    "precio": 349999,
+    "imagen": "https://cdn-ipoint.waugi.com.ar/25122-thickbox_default/airpods-3ra-generacion-con-estuche-de-carga-lightning.jpg",
+    "descripcion": "Auriculares inalámbricos con audio espacial y ajuste cómodo para todo el día.",
+    "color": "Blanco",
+    "categoria": "Auriculares"
+  },
+  {
+    "id": 7,
+    "nombre": "Joystick PS4",
+    "precio": 124999,
+    "imagen": "https://images.fravega.com/f1000/d7a364a37d4cd8f7486cbcb5ad0e1d74.jpg",
+    "descripcion": "Control inalámbrico DualShock 4 con vibración y panel táctil integrado.",
+    "color": "Negro",
+    "categoria": "Joysticks"
+  },
+  {
+    "id": 8,
+    "nombre": "Auricular Hyperx Cloud Flight Wireless",
+    "precio": 299999,
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_748113-MLA96100186861_102025-F.webp",
+    "descripcion": "Auriculares inalámbricos con sonido envolvente y batería de larga duración.",
+    "color": "Negro y azul",
+    "categoria": "Auriculares"
+  },
+  {
+    "id": 9,
+    "nombre": "iPhone 17 256GB",
+    "precio": 1299999,
+    "imagen": "https://www.mobileana.com/wp-content/uploads/2025/06/Apple-iPhone-17-Pro-Max-Cosmic-Orange.webp",
+    "descripcion": "Smartphone premium con chip A18 Bionic y cámara avanzada para fotos y videos profesionales.",
+    "color": "Naranja",
+    "categoria": "Telefonos"
+  },
+  {
+    "id": 10,
+    "nombre": "Teclado Redragon Kumara",
+    "precio": 65999,
+    "imagen": "https://www.manual.pe/thumbs/products/l/1644967-redragon-kumara-k552-2-sp.webp",
+    "descripcion": "Teclado mecánico compacto con switches Blue y retroiluminación LED roja.",
+    "color": "Negro",
+    "categoria": "Teclados"
+  },
+  {
+    "id": 11,
+    "nombre": "Joystick PS5",
+    "precio": 139999,
+    "imagen": "https://tecnoadictos.com.ar/wp-content/uploads/2024/09/joystick-PS5-WIRELLES-CONTROLLER-NEW-DESING-FOR-CONTROLLER-2.webp",
+    "descripcion": "Control inalámbrico DualSense con gatillos adaptativos y vibración háptica inmersiva.",
+    "color": "Blanco",
+    "categoria": "Joysticks"
+  },
+  {
+    "id": 12,
+    "nombre": "Iphone 16 Pro 1TB",
+    "precio": 999999,
+    "imagen": "https://tecnocellcompany.com/wp-content/uploads/2025/01/iph-16-pro.jpg",
+    "descripcion": "Smartphone de alto rendimiento con chip A17 Pro y amplio almacenamiento de 1TB.",
+    "color": "Natural",
+    "categoria": "Telefonos"
+  },
+  {
+    "id": 13,
+    "nombre": "Mouse Logitech G305",
+    "precio": 45999,
+    "imagen": "https://acdn-us.mitiendanube.com/stores/001/474/949/products/g305b7-feb8e6d3b69c6ec6ce16831446105116-1024-1024.jpg",
+    "descripcion": "Mouse inalámbrico con sensor HERO de alta precisión y tecnología Lightspeed.",
+    "color": "Celeste",
+    "categoria": "Mouses"
+  },
+  {
+    "id": 14,
+    "nombre": "PlayStation 5 1TB",
+    "precio": 799999,
+    "imagen": "https://http2.mlstatic.com/D_679677-MLA93495772869_092025-C.jpg",
+    "descripcion": "Consola de nueva generación con SSD ultrarrápido, soporte para 4K y retroalimentación háptica inmersiva.",
+    "color": "Blanca",
+    "categoria": "Consolas"
+  },
+  {
+    "id": 15,
+    "nombre": "Samsung Galaxy Z Fold7",
+    "precio": 3999999,
+    "imagen": "https://www.firstnet.com/content/dam/firstnet/images/image-and-text/image-text-firstnet-samsung-galaxy-z-fold7.jpg",
+    "descripcion": "Smartphone plegable con pantalla AMOLED de 7.6 pulgadas, multitarea avanzada y conectividad 5G.",
+    "color": "Azul",
+    "categoria": "Telefonos"
+  }
+]
