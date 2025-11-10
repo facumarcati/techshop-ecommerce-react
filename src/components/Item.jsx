@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import styles from "./Item.module.css";
 
 const Item = ({ item }) => {
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = () => {
+    addToCart(item);
+  };
+
   return (
     <div className={styles.card}>
       <img src={item.imagen} alt={item.nombre} className={styles.image} />
@@ -13,7 +21,9 @@ const Item = ({ item }) => {
         <Link to={`/products/${item.id}`} className={styles.btnDetail}>
           Ver detalle
         </Link>
-        <button className={styles.btnCart}>🛒</button>
+        <button onClick={handleAddToCart} className={styles.btnCart}>
+          🛒
+        </button>
       </div>
     </div>
   );

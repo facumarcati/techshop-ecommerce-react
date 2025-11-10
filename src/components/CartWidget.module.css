@@ -4,4 +4,9 @@
   font-size: 1.4rem;
   cursor: pointer;
   padding-right: 12px;
+  transition: all 0.2s ease;
+}
+
+.cart:hover {
+  transform: scale(1.05);
 }
