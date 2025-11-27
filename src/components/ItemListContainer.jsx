@@ -1,11 +1,13 @@
 import styles from "./ItemListContainer.module.css";
 import ItemList from "./ItemList.jsx";
 import useFetch from "../hooks/useFetch";
+import useFirebaseItems from "../hooks/useFirebaseItems";
 
-const ItemListContainer = ({ saludo }) => {
-  const { data: items, error, loading } = useFetch("/items.json", 500);
+const ItemListContainer = () => {
+  // const { data: items, error, loading } = useFetch("/items.json", 500);
+  const { items, loading, error } = useFirebaseItems();
 
-  if (loading) return <p className={styles.message}>Cargando...</p>;
+  if (loading) return <p className={styles.message}>Cargando productos...</p>;
   if (error)
     return <p className={styles.message}>Error al cargar los productos</p>;
 

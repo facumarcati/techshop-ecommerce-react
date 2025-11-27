@@ -1,4 +1,4 @@
-import CartWidget from "./CartWidget";
+import AddProductIcon from "./AddProductIcon";
 import NavLinks from "./NavLinks";
 import Logo from "./Logo";
 import styles from "./NavBar.module.css";
@@ -11,9 +11,9 @@ const NavBar = () => {
         <Link to="/" className={styles.logo}>
           <Logo />
         </Link>
-        <CartWidget className={styles.cart} />
+
+        <NavLinks />
       </div>
-      <NavLinks className={styles.navlinks} />
     </nav>
   );
 };

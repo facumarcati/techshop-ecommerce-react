@@ -1,0 +1,242 @@
+.layout {
+  display: flex;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.itemCard {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+.itemImg {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 6px 0 2px;
+  line-height: 1.1;
+  min-height: 2em;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #16a085;
+  margin: 2px 0;
+  border-bottom: 2px solid #16a085;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+.subtotal {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.qtyLabel {
+  font-size: 14px;
+}
+
+.qtyBox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 10px 0;
+}
+
+.qtyBtn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.qtyBtn:hover {
+  background: #e5e5e5;
+}
+
+.qtyBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.qtyNumber {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.stockInfo {
+  font-size: 13px;
+  color: #777;
+  margin-top: -3px;
+}
+
+.deleteBtn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  margin-top: 12px;
+  background: transparent;
+  color: #ff4d4d;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.deleteBtn:hover {
+  color: #d93636;
+}
+
+.summaryCard {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.totalLabel {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.totalAmount {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0d6f3f;
+  margin-bottom: 20px;
+}
+
+.buyBtn {
+  width: 100%;
+  background: #3483fa;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buyBtn:hover {
+  background: #2968c8;
+}
+
+.message {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .itemCard {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .itemImg {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .deleteBtn {
+    top: 8px;
+    right: 8px;
+    font-size: 12px;
+  }
+
+  .itemName {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .subtotal {
+    text-align: center;
+  }
+
+  .qtyLabel {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0 4px;
+    font-size: 14px;
+  }
+
+  .qtyBox {
+    justify-content: center;
+  }
+
+  .stockInfo {
+    text-align: center;
+  }
+
+  .summaryCard {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .totalAmount {
+    font-size: 22px;
+  }
+
+  .buyBtn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
