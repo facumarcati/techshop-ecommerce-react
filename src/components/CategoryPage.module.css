@@ -21,17 +21,21 @@
   font-size: 1.2rem;
 }
 
-.btnBack {
-  background: #eee;
+.btnVolver {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #16a085;
+  font-weight: 500;
   border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
+  background: transparent;
   cursor: pointer;
+  padding: 8px 0;
   margin-bottom: 20px;
-  font-size: 0.9rem;
-  transition: background 0.2s;
+  transition: color 0.2s ease;
 }
 
-.btnBack:hover {
-  background: #ddd;
+.btnVolver:hover {
+  color: #138d75;
 }

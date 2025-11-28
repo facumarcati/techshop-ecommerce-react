@@ -46,7 +46,7 @@ const CategoryPage = () => {
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.container}>
-        <button onClick={() => navigate(-1)} className={styles.btnBack}>
+        <button onClick={() => navigate(-1)} className={styles.btnVolver}>
           ← Volver
         </button>
 
