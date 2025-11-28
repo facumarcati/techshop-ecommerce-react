@@ -51,8 +51,8 @@ body {
   }
 
   .topRow {
-    width: 100%; /* ← hace que se mantenga el espacio como antes */
-    justify-content: space-between; /* ← asegura distribución simétrica */
+    width: 100%;
+    justify-content: space-between;
     gap: 40px;
   }
   .navlinks {

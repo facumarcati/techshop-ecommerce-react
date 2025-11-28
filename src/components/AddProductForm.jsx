@@ -2,6 +2,7 @@ import { useState } from "react";
 import { collection, addDoc, getFirestore } from "firebase/firestore";
 import { app } from "../firebase/config.js";
 import styles from "./AddProductForm.module.css";
+import Swal from "sweetalert2";
 
 const AddProductForm = () => {
   const [errors, setErrors] = useState({});
@@ -71,7 +72,13 @@ const AddProductForm = () => {
         category: formData.category,
       });
 
-      alert("Producto agregado correctamente");
+      Swal.fire({
+        title: "Producto agregado",
+        text: `"${formData.name}" fue creado correctamente`,
+        icon: "success",
+        confirmButtonText: "Aceptar",
+      });
+
       setFormData({
         name: "",
         price: "",

@@ -9,15 +9,6 @@
     "categoria": "Teclados"
   },
   {
-    "id": 13,
-    "nombre": "Mouse Logitech G305",
-    "precio": 45999,
-    "imagen": "https://acdn-us.mitiendanube.com/stores/001/474/949/products/g305b7-feb8e6d3b69c6ec6ce16831446105116-1024-1024.jpg",
-    "descripcion": "Mouse inalámbrico con sensor HERO de alta precisión y tecnología Lightspeed.",
-    "color": "Celeste",
-    "categoria": "Mouses"
-  },
-  {
     "id": 15,
     "nombre": "Samsung Galaxy Z Fold7",
     "precio": 3999999,

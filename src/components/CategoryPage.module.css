@@ -1,3 +1,7 @@
+.pageWrapper {
+  min-height: calc(100vh - 180px);
+}
+
 .container {
   padding: 20px 20px;
   max-width: 1200px;

@@ -1,10 +1,19 @@
+.pageWrapper {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .itemDetail {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 900px;
-  margin: 20px 20px;
+  margin: 20px auto;
   padding: 10px 20px 20px 20px;
   background-color: #fff;
   border: 1px solid #e0e0e0;

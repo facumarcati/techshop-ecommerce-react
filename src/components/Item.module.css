@@ -7,11 +7,20 @@
   background-color: #fff;
   width: 100%;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .image {
@@ -29,17 +38,34 @@
   min-height: 2em;
 }
 
-.color {
-  font-size: 0.9rem;
+.colorBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: black;
+  color: #555;
   margin: 0 0 12px 0;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.colorDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .description {
   font-size: 0.85rem;
   font-weight: 400;
-  color: #555; /* gris suave */
+  color: #555;
   margin: 10px 0 12px 0;
   line-height: 1.3;
   display: -webkit-box;
@@ -70,19 +96,34 @@
 .btnDetail {
   flex: 1;
   text-decoration: none;
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0;
   padding: 8px 12px;
   border-radius: 8px;
   color: #333;
-  background-color: #f7f7f7;
+  background-color: white;
   font-size: 0.9rem;
   text-align: center;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .btnDetail:hover {
-  background-color: #ebebeb;
-  border-color: #bbb;
+  background-color: #fafafa;
+  border-color: #333;
+  transform: translateX(2px);
+}
+
+.btnDetail::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.btnDetail:hover::after {
+  transform: translateX(3px);
 }
 
 .btnCart {
@@ -113,4 +154,39 @@
 .btnCart:active {
   transform: scale(0.98);
   box-shadow: 0 1px 2px rgba(0, 153, 255, 0.3);
+}
+
+.noStock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #d32f2f;
+}
+
+.lowStock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #f57c00;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background-color: #f3f3f3;
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+.disabled:hover {
+  transform: none;
+  background-color: #f3f3f3;
+  border-color: #ccc;
+  box-shadow: none;
 }

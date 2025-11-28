@@ -1,17 +1,40 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
+import { useToast } from "../hooks/useToast";
 import styles from "./CartContainer.module.css";
+import Swal from "sweetalert2";
 
 function CartContainer() {
-  const { cart, removeFromCart, updateQuantity } = useContext(CartContext);
+  const { cart, removeFromCart, updateQuantity, clearCart } =
+    useContext(CartContext);
+  const { showToast } = useToast();
 
   if (!cart || cart.length < 1) {
     return (
-      <div>
+      <div className={styles.emptyPage}>
         <p className={styles.message}>No tenés productos en el carrito</p>
       </div>
     );
   }
+
+  const handleDelete = async (item) => {
+    const result = await Swal.fire({
+      title: "¿Eliminar producto?",
+      text: `Se va a eliminar "${item.name}" del carrito`,
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Eliminar",
+      cancelButtonText: "Cancelar",
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+    });
+
+    if (result.isConfirmed) {
+      removeFromCart(item.id);
+      showToast("Producto eliminado del carrito", "success");
+    }
+  };
 
   const total = cart.reduce((acc, item) => acc + item.price * item.count, 0);
 
@@ -24,11 +47,7 @@ function CartContainer() {
           <div key={item.id} className={styles.itemCard}>
             <button
               className={styles.deleteBtn}
-              onClick={() => {
-                if (confirm("¿Seguro que queres eliminar este producto?")) {
-                  removeFromCart(item.id);
-                }
-              }}
+              onClick={() => handleDelete(item)}
             >
               Eliminar
             </button>
@@ -86,7 +105,19 @@ function CartContainer() {
           <p className={styles.totalLabel}>Total:</p>
           <p className={styles.totalAmount}>${total.toLocaleString("de-DE")}</p>
 
-          <button className={styles.buyBtn}>Continuar compra</button>
+          <Link to={`/checkout`} className={styles.buyBtn}>
+            Continuar compra
+          </Link>
+          <button
+            className={styles.clearBtn}
+            onClick={() => {
+              if (confirm("Seguro que queres vaciar el carrito?")) {
+                clearCart();
+              }
+            }}
+          >
+            Vaciar carrito
+          </button>
         </div>
       </div>
     </div>

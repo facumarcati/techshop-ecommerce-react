@@ -1,4 +1,3 @@
-import AddProductIcon from "./AddProductIcon";
 import NavLinks from "./NavLinks";
 import Logo from "./Logo";
 import styles from "./NavBar.module.css";

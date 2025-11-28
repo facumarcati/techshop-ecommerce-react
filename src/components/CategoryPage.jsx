@@ -44,14 +44,16 @@ const CategoryPage = () => {
   if (error) return <p className={styles.message}>{error}</p>;
 
   return (
-    <div className={styles.container}>
-      <button onClick={() => navigate(-1)} className={styles.btnBack}>
-        ← Volver
-      </button>
+    <div className={styles.pageWrapper}>
+      <div className={styles.container}>
+        <button onClick={() => navigate(-1)} className={styles.btnBack}>
+          ← Volver
+        </button>
 
-      <h1 className={styles.title}>{cat}</h1>
+        <h1 className={styles.title}>{cat}</h1>
 
-      <ItemList items={items} />
+        <ItemList items={items} />
+      </div>
     </div>
   );
 };
