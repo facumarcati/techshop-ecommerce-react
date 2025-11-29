@@ -36,7 +36,6 @@
   font-size: 0.9rem;
   color: #333;
   font-weight: 600;
-  margin-bottom: -12px;
 }
 
 .submitBtn {
@@ -63,4 +62,157 @@
 .orderId {
   font-size: 22px;
   color: #0d6f3f;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inputError {
+  border-color: #d32f2f !important;
+  background-color: #ffebee !important;
+}
+
+.errorMessage {
+  display: block;
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.successContainer {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #16a085 0%, #138d75 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.3);
+}
+
+.successContainer h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin: 0 0 10px 0;
+}
+
+.successText {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 30px 0;
+}
+
+.orderIdBox {
+  background: #f5f5f5;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.orderIdLabel {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.orderId {
+  display: block;
+  font-size: 1.5rem;
+  color: #16a085;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.successActions {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btnOrders,
+.btnHome {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btnOrders {
+  background-color: #16a085;
+  color: white;
+  box-shadow: 0 2px 8px rgba(22, 160, 133, 0.3);
+}
+
+.btnOrders:hover {
+  background-color: #138d75;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 160, 133, 0.4);
+}
+
+.btnHome {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.btnHome:hover {
+  background-color: #333;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.inputError {
+  border-color: #d32f2f !important;
+  background-color: #ffebee !important;
+}
+
+.errorMessage {
+  display: block;
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #999;
+}
+
+@media (min-width: 640px) {
+  .successActions {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

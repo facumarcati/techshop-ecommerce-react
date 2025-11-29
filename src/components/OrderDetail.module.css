@@ -1,7 +1,7 @@
 .pageWrapper {
   min-height: calc(100vh - 180px);
   padding: 20px;
-  background: #fafafa;
+  margin: 0 auto 60px;
 }
 
 .container {
