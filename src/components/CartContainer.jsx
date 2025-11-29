@@ -36,6 +36,30 @@ function CartContainer() {
     }
   };
 
+  const handleClearCart = async () => {
+    const result = await Swal.fire({
+      title: "¿Vaciar carrito?",
+      text: "Se eliminarán todos los productos del carrito",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Aceptar",
+      cancelButtonText: "Cancelar",
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+    });
+
+    if (result.isConfirmed) {
+      clearCart();
+      Swal.fire({
+        title: "Carrito vacío",
+        text: "Se eliminaron todos los productos.",
+        icon: "success",
+        timer: 1500,
+        showConfirmButton: false,
+      });
+    }
+  };
+
   const total = cart.reduce((acc, item) => acc + item.price * item.count, 0);
 
   return (
@@ -108,14 +132,7 @@ function CartContainer() {
           <Link to={`/checkout`} className={styles.buyBtn}>
             Continuar compra
           </Link>
-          <button
-            className={styles.clearBtn}
-            onClick={() => {
-              if (confirm("Seguro que queres vaciar el carrito?")) {
-                clearCart();
-              }
-            }}
-          >
+          <button className={styles.clearBtn} onClick={handleClearCart}>
             Vaciar carrito
           </button>
         </div>
