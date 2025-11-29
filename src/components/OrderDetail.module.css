@@ -1,0 +1,264 @@
+.pageWrapper {
+  min-height: calc(100vh - 180px);
+  padding: 20px;
+  background: #fafafa;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.btnVolver {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #16a085;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  transition: color 0.2s ease;
+}
+
+.btnVolver:hover {
+  color: #138d75;
+}
+
+.orderDetail {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background: linear-gradient(135deg, #16a085 0%, #138d75 100%);
+  color: white;
+  gap: 20px;
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.orderId {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.orderDate {
+  font-size: 0.95rem;
+  opacity: 0.95;
+  text-transform: capitalize;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+.section {
+  padding: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 20px 0;
+}
+
+.customerInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.infoLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.infoValue {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.summaryGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.summaryItem,
+.summaryItemTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summaryItemTotal {
+  padding-top: 12px;
+  margin-top: 8px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.summaryLabel {
+  padding-right: 6px;
+}
+
+.summaryLabel,
+.summaryLabelTotal {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.summaryLabelTotal {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.summaryValue {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.summaryValueTotal {
+  font-size: 1.5rem;
+  color: #16a085;
+  font-weight: 700;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.itemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  gap: 20px;
+  transition: background 0.2s ease;
+}
+
+.itemRow:hover {
+  background: #f0f0f0;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.itemTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.itemQuantity {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.itemPricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  min-width: 140px;
+}
+
+.itemPrice {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.itemSubtotal {
+  font-size: 1.1rem;
+  color: #16a085;
+  font-weight: 700;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #666;
+  padding: 40px 20px;
+  min-height: 300px;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .statusBadge {
+    align-self: flex-start;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .itemRow {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .itemPricing {
+    align-items: flex-start;
+    width: 100%;
+  }
+}

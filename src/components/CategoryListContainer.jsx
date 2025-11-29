@@ -18,6 +18,7 @@ const CategoryListContainer = () => {
           id: doc.id,
           ...doc.data(),
         }));
+
         setItems(data);
       })
       .finally(() => setLoading(false));
@@ -28,6 +29,7 @@ const CategoryListContainer = () => {
   const categorias = items.reduce((acc, item) => {
     if (!acc[item.category]) acc[item.category] = [];
     acc[item.category].push(item);
+
     return acc;
   }, {});
 
@@ -37,23 +39,28 @@ const CategoryListContainer = () => {
 
       <div className={styles.grid}>
         {Object.keys(categorias).map((cat) => (
-          <div key={cat} className={styles.card}>
-            <img
-              src={categorias[cat][0].image}
-              alt={cat}
-              className={styles.image}
-            />
-            <h2 className={styles.name}>{cat}</h2>
-            <p className={styles.count}>
-              {categorias[cat]?.length === 1
-                ? "1 producto disponible"
-                : `${categorias[cat]?.length} productos disponibles`}
-            </p>
+          <Link to={`/category/${cat}`} key={cat} className={styles.card}>
+            <div className={styles.imageContainer}>
+              <img
+                src={categorias[cat][0].image}
+                alt={cat}
+                className={styles.image}
+              />
+            </div>
 
-            <Link to={`/category/${cat}`} className={styles.btn}>
-              Ver productos →
-            </Link>
-          </div>
+            <div className={styles.info}>
+              <h2 className={styles.name}>{cat}</h2>
+              <p className={styles.count}>
+                {categorias[cat]?.length === 1
+                  ? "1 producto"
+                  : `${categorias[cat]?.length} productos`}
+              </p>
+            </div>
+
+            <div className={styles.btnContainer}>
+              <span className={styles.btn}>Ver productos</span>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
