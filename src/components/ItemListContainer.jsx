@@ -11,7 +11,7 @@ const ItemListContainer = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.listProducts}>Productos</h1>
+      <h1 className={styles.title}>Productos</h1>
       <ItemList items={items} />
     </div>
   );
