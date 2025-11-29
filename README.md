@@ -75,20 +75,7 @@ npm install
 yarn install
 ```
 
-### 3. Configurar Firebase
-
-Crear un archivo `.env` en la raíz del proyecto con tus credenciales de Firebase:
-
-```env
-VITE_FIREBASE_API_KEY=tu_api_key
-VITE_FIREBASE_AUTH_DOMAIN=tu_auth_domain
-VITE_FIREBASE_PROJECT_ID=tu_project_id
-VITE_FIREBASE_STORAGE_BUCKET=tu_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
-VITE_FIREBASE_APP_ID=tu_app_id
-```
-
-### 4. Iniciar en modo desarrollo
+### 3. Iniciar en modo desarrollo
 
 ```bash
 npm run dev
