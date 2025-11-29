@@ -10,6 +10,7 @@ import CategoryListContainer from "./components/CategoryListContainer";
 import AddProductForm from "./components/AddProductForm";
 import CategoryPage from "./components/CategoryPage";
 import CheckoutForm from "./components/CheckoutForm";
+import OrderListContainer from "./components/OrderListContainer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/add-product" element={<AddProductForm />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/checkout" element={<CheckoutForm />} />
+        <Route path="orders" element={<OrderListContainer />} />
       </Routes>
       <Footer />
     </>

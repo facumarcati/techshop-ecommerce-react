@@ -1,0 +1,39 @@
+.containerError {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 40px 50px;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  max-width: 420px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #222;
+  margin: 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+  margin: 10px 0 12px 0;
+}
+
+.text {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+  margin-top: 0;
+}

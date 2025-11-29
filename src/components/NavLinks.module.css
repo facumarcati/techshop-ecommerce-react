@@ -89,7 +89,7 @@
   transform: rotate(90deg);
 }
 
-@media (max-width: 772px) {
+@media (max-width: 896px) {
   .navLinksDesktop {
     display: none;
   }

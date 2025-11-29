@@ -58,6 +58,15 @@ const NavLinks = () => {
           Categorías
         </NavLink>
 
+        <NavLink
+          to="/orders"
+          className={({ isActive }) =>
+            `${styles.link} ${isActive ? styles.active : ""}`
+          }
+        >
+          Ordenes
+        </NavLink>
+
         <Link to="/add-product" className={styles.noDecoration}>
           <AddProductIcon />
         </Link>
@@ -84,6 +93,10 @@ const NavLinks = () => {
 
           <NavLink to="/categories" className={styles.mobileLink}>
             Categorías
+          </NavLink>
+
+          <NavLink to="/orders" className={styles.mobileLink}>
+            Ordenes
           </NavLink>
 
           <Link to="/add-product" className={styles.mobileLink}>
